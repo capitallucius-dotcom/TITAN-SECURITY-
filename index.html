@@ -4,10 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Titan Security | Professional Protection</title>
-  <meta name="description" content="Contact Titan Security in Lafia, Nasarawa State, for security service enquiries.">
   <meta name="theme-color" content="#101010">
+  <meta name="description" content="Capital's Titan Security — professional security service enquiries in Lafia, Nasarawa State.">
+  <title>Capital's Titan Security | Professional Protection</title>
 
   <style>
     :root {
@@ -25,9 +24,7 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       background: var(--black);
@@ -43,15 +40,14 @@
       gap: 16px;
       padding: 18px 7%;
       border-bottom: 1px solid var(--border);
-      background: #111111;
+      background: #111;
     }
 
     .logo {
       color: var(--gold);
-      font-size: 20px;
+      font-size: 19px;
       font-weight: 800;
       letter-spacing: 1px;
-      white-space: nowrap;
     }
 
     nav {
@@ -61,14 +57,12 @@
     }
 
     nav a {
-      color: var(--white);
+      color: white;
       text-decoration: none;
       font-size: 13px;
     }
 
-    nav a:hover {
-      color: var(--gold);
-    }
+    nav a:hover { color: var(--gold); }
 
     .hero {
       min-height: 76vh;
@@ -100,9 +94,7 @@
       margin-bottom: 22px;
     }
 
-    .gold {
-      color: var(--gold);
-    }
+    .gold { color: var(--gold); }
 
     .hero p {
       color: var(--muted);
@@ -113,13 +105,14 @@
     .button {
       display: inline-block;
       background: var(--gold);
-      color: #111111;
+      color: #111;
       padding: 13px 22px;
       border: 1px solid var(--gold);
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
       text-align: center;
+      cursor: pointer;
       transition: 0.2s;
     }
 
@@ -145,7 +138,7 @@
     }
 
     .section-intro {
-      max-width: 600px;
+      max-width: 650px;
       color: var(--muted);
       margin-bottom: 32px;
     }
@@ -162,16 +155,14 @@
       border: 1px solid var(--border);
       border-radius: 8px;
       padding: 25px;
+      color: white;
       text-decoration: none;
-      color: var(--white);
-      transition: border-color 0.2s, transform 0.2s;
+      transition: 0.2s;
     }
 
-    .service:hover,
-    .service:focus-visible {
+    .service:hover {
       border-color: var(--gold);
       transform: translateY(-3px);
-      outline: none;
     }
 
     .service-number {
@@ -181,9 +172,7 @@
       letter-spacing: 2px;
     }
 
-    .service h3 {
-      margin: 12px 0 8px;
-    }
+    .service h3 { margin: 12px 0 8px; }
 
     .service p {
       color: var(--muted);
@@ -209,9 +198,92 @@
       max-width: 720px;
     }
 
-    .contact {
-      text-align: center;
+    .booking {
+      background: #121212;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
     }
+
+    .booking-form {
+      max-width: 800px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 28px;
+      margin-top: 25px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .field.full { grid-column: 1 / -1; }
+
+    .field label {
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--gold);
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 13px;
+      background: #101010;
+      color: white;
+      border: 1px solid #50432d;
+      border-radius: 5px;
+      font: inherit;
+      font-size: 14px;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      outline: 1px solid var(--gold);
+      border-color: var(--gold);
+    }
+
+    .field textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      margin: 20px 0;
+    }
+
+    .consent input {
+      margin-top: 6px;
+      accent-color: var(--gold);
+    }
+
+    .booking-form .button {
+      width: 100%;
+      font-size: 15px;
+    }
+
+    .form-note {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 12px;
+    }
+
+    .contact { text-align: center; }
 
     .contact .section-intro {
       margin-left: auto;
@@ -246,13 +318,7 @@
       font-size: 14px;
     }
 
-    .detail a {
-      text-decoration: none;
-    }
-
-    .detail a:hover {
-      color: var(--gold);
-    }
+    .detail a { text-decoration: none; }
 
     .contact-actions {
       display: flex;
@@ -265,13 +331,11 @@
       text-align: center;
       padding: 25px 7%;
       border-top: 1px solid var(--border);
-      color: #999999;
+      color: #999;
       font-size: 12px;
     }
 
-    footer p + p {
-      margin-top: 5px;
-    }
+    footer p + p { margin-top: 5px; }
 
     @media (max-width: 600px) {
       header {
@@ -279,52 +343,52 @@
         padding: 17px 5%;
       }
 
+      .logo {
+        font-size: 17px;
+        text-align: center;
+      }
+
       nav {
         justify-content: center;
         gap: 12px;
       }
 
-      nav a {
-        font-size: 12px;
-      }
+      nav a { font-size: 12px; }
 
       .hero {
         min-height: 65vh;
         padding: 65px 7%;
       }
 
-      section {
-        padding: 50px 7%;
-      }
+      section { padding: 50px 7%; }
 
-      .contact-actions {
-        flex-direction: column;
-      }
+      .form-grid { grid-template-columns: 1fr; }
 
-      .contact-actions .button {
-        width: 100%;
-      }
+      .booking-form { padding: 20px; }
+
+      .contact-actions { flex-direction: column; }
+
+      .contact-actions .button { width: 100%; }
     }
   </style>
 </head>
-
 <body>
 
   <header>
-    <div class="logo">TITAN SECURITY</div>
+    <div class="logo">CAPITAL'S TITAN SECURITY</div>
 
     <nav aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#about">About</a>
+      <a href="#booking">Book Us</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-
     <section class="hero" id="home">
-      <div class="eyebrow">DISCIPLINE. VIGILANCE. TRUST.</div>
+      <div class="eyebrow">BY CAPITAL • DISCIPLINE • VIGILANCE • TRUST</div>
 
       <h1>
         Your Safety.<br>
@@ -333,11 +397,12 @@
 
       <p>
         Professional security you can trust.
-        Contact Titan Security to discuss your event
-        security, club security and VIP protection needs.
+        Contact Capital's Titan Security for event security,
+        club security, VIP protection and private functions
+        in Lafia and surrounding areas.
       </p>
 
-      <a class="button" href="#contact">REQUEST A QUOTE</a>
+      <a class="button" href="#booking">BOOK OUR SERVICES</a>
     </section>
 
     <section id="services">
@@ -346,23 +411,22 @@
       </h2>
 
       <p class="section-intro">
-        Select a service to send us an enquiry
-        directly through WhatsApp.
+        Choose a service to enquire directly through WhatsApp,
+        or complete our booking form below.
       </p>
 
       <div class="services">
-
         <a class="service"
-           href="https://api.whatsapp.com/send?phone=2347082719485&amp;text=Hello%20Titan%20Security%2C%20I%20would%20like%20to%20enquire%20about%20Event%20Security."
+           href="https://api.whatsapp.com/send?phone=2347082719485&amp;text=Hello%20Capital%27s%20Titan%20Security%2C%20I%20would%20like%20to%20enquire%20about%20Event%20Security."
            target="_blank" rel="noopener noreferrer">
           <div class="service-number">01 / EVENTS</div>
           <h3>Event Security</h3>
-          <p>Enquiries for parties, celebrations, private events and crowd management.</p>
+          <p>Security enquiries for parties, celebrations, private events and crowd management.</p>
           <span class="service-cta">ENQUIRE ON WHATSAPP →</span>
         </a>
 
         <a class="service"
-           href="https://api.whatsapp.com/send?phone=2347082719485&amp;text=Hello%20Titan%20Security%2C%20I%20would%20like%20to%20enquire%20about%20Club%20Security."
+           href="https://api.whatsapp.com/send?phone=2347082719485&amp;text=Hello%20Capital%27s%20Titan%20Security%2C%20I%20would%20like%20to%20enquire%20about%20Club%20Security."
            target="_blank" rel="noopener noreferrer">
           <div class="service-number">02 / VENUES</div>
           <h3>Club Security</h3>
@@ -371,7 +435,7 @@
         </a>
 
         <a class="service"
-           href="https://api.whatsapp.com/send?phone=2347082719485&amp;text=Hello%20Titan%20Security%2C%20I%20would%20like%20to%20enquire%20about%20VIP%20Protection."
+           href="https://api.whatsapp.com/send?phone=2347082719485&amp;text=Hello%20Capital%27s%20Titan%20Security%2C%20I%20would%20like%20to%20enquire%20about%20VIP%20Protection."
            target="_blank" rel="noopener noreferrer">
           <div class="service-number">03 / VIP</div>
           <h3>VIP Protection</h3>
@@ -380,29 +444,133 @@
         </a>
 
         <a class="service"
-           href="https://api.whatsapp.com/send?phone=2347082719485&amp;text=Hello%20Titan%20Security%2C%20I%20would%20like%20to%20enquire%20about%20Private%20Function%20Security."
+           href="https://api.whatsapp.com/send?phone=2347082719485&amp;text=Hello%20Capital%27s%20Titan%20Security%2C%20I%20would%20like%20to%20enquire%20about%20Private%20Function%20Security."
            target="_blank" rel="noopener noreferrer">
           <div class="service-number">04 / PRIVATE</div>
           <h3>Private Functions</h3>
           <p>Enquiries for private gatherings and special occasions.</p>
           <span class="service-cta">ENQUIRE ON WHATSAPP →</span>
         </a>
-
       </div>
     </section>
 
     <section class="about" id="about">
       <h2 class="section-title">
-        About <span class="gold">Titan Security</span>
+        About <span class="gold">Capital's Titan Security</span>
       </h2>
 
       <p class="about-text">
-        Titan Security aims to build a trusted security
-        brand grounded in discipline, professionalism
-        and respect for clients. Every security assignment
+        Built on discipline and driven by excellence,
+        Capital's Titan Security aims to build a trusted
+        security brand grounded in professionalism,
+        vigilance and respect for clients. Every assignment
         should involve careful planning, clear communication
         and a commitment to safety.
       </p>
+    </section>
+
+    <section class="booking" id="booking">
+      <h2 class="section-title">
+        Book Our <span class="gold">Services</span>
+      </h2>
+
+      <p class="section-intro">
+        Complete the form below with your requirements.
+        When you submit it, WhatsApp will open with your
+        booking details ready to send to our team.
+      </p>
+
+      <form class="booking-form" id="bookingForm">
+        <div class="form-grid">
+
+          <div class="field">
+            <label for="customerName">Full Name *</label>
+            <input id="customerName" name="customerName"
+                   type="text" placeholder="Enter your full name"
+                   autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="customerPhone">Phone Number *</label>
+            <input id="customerPhone" name="customerPhone"
+                   type="tel" placeholder="Your contact number"
+                   autocomplete="tel" required>
+          </div>
+
+          <div class="field">
+            <label for="serviceType">Service Required *</label>
+            <select id="serviceType" name="serviceType" required>
+              <option value="">Choose a service</option>
+              <option>Event Security</option>
+              <option>Club Security</option>
+              <option>VIP Protection</option>
+              <option>Private Functions</option>
+              <option>Other Security Enquiry</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="bookingDate">Event / Service Date *</label>
+            <input id="bookingDate" name="bookingDate"
+                   type="date" required>
+          </div>
+
+          <div class="field">
+            <label for="eventLocation">Location *</label>
+            <input id="eventLocation" name="eventLocation"
+                   type="text" placeholder="Where is the event?"
+                   required>
+          </div>
+
+          <div class="field">
+            <label for="duration">Duration *</label>
+            <select id="duration" name="duration" required>
+              <option value="">Select duration</option>
+              <option>Less than 4 hours</option>
+              <option>4–8 hours</option>
+              <option>8–12 hours</option>
+              <option>12 hours or more</option>
+              <option>Multiple days</option>
+              <option>To be discussed</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="guardCount">Number of Guards *</label>
+            <select id="guardCount" name="guardCount" required>
+              <option value="">Select number</option>
+              <option>1 guard</option>
+              <option>2 guards</option>
+              <option>3–5 guards</option>
+              <option>6–10 guards</option>
+              <option>More than 10 guards</option>
+              <option>Need a recommendation</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="details">Additional Details</label>
+            <textarea id="details" name="details"
+                      placeholder="Tell us more about your event, requirements or questions."></textarea>
+          </div>
+
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" id="consent" required>
+          <span>I confirm these details are correct and agree to send this enquiry to Capital's Titan Security through WhatsApp.</span>
+        </label>
+
+        <button class="button" type="submit">
+          SUBMIT BOOKING VIA WHATSAPP
+        </button>
+
+        <p class="form-note">
+          Submitting opens WhatsApp. Your enquiry is sent only
+          when you press Send in WhatsApp. This form does not
+          independently confirm a booking.
+        </p>
+      </form>
     </section>
 
     <section class="contact" id="contact">
@@ -411,13 +579,11 @@
       </h2>
 
       <p class="section-intro">
-        Planning an event or looking for protection?
-        Contact us to discuss your requirements
-        and request a quotation.
+        Contact Capital's Titan Security to discuss your
+        requirements and request a quotation.
       </p>
 
       <div class="contact-details">
-
         <div class="detail">
           <h3>WHATSAPP / PHONE</h3>
           <p>
@@ -436,44 +602,107 @@
 
         <div class="detail">
           <h3>LOCATION</h3>
-          <p>Lafia, Nasarawa State</p>
+          <p>Lafia, Nasarawa State, Nigeria</p>
         </div>
-
       </div>
 
       <div class="contact-actions">
-
         <a class="button"
-           href="https://api.whatsapp.com/send?phone=2347082719485&amp;text=Hello%20Titan%20Security%2C%20I%20would%20like%20to%20enquire%20about%20your%20security%20services."
+           href="https://api.whatsapp.com/send?phone=2347082719485&amp;text=Hello%20Capital%27s%20Titan%20Security%2C%20I%20would%20like%20to%20enquire%20about%20your%20security%20services."
            target="_blank" rel="noopener noreferrer">
           CHAT ON WHATSAPP
         </a>
 
         <a class="button button-outline"
-           href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=capitaltitansecurity@gmail.com&amp;su=Titan%20Security%20Enquiry"
+           href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=capitaltitansecurity@gmail.com&amp;su=Capital%27s%20Titan%20Security%20Enquiry"
            target="_blank" rel="noopener noreferrer">
           SEND AN EMAIL
         </a>
-
       </div>
     </section>
-
   </main>
 
   <footer>
     <p>
-      &copy; <span id="year"></span> Titan Security.
+      &copy; <span id="year"></span> Capital's Titan Security.
       All rights reserved.
     </p>
     <p>Professional security you can trust.</p>
-    <p>Lafia, Nasarawa State.</p>
+    <p>Lafia, Nasarawa State, Nigeria.</p>
   </footer>
 
   <script>
+    // Automatically display the current year.
     document.getElementById("year").textContent =
       new Date().getFullYear();
+
+    // Prevent customers from selecting a past booking date.
+    const bookingDate = document.getElementById("bookingDate");
+    const today = new Date();
+    const localToday = [
+      today.getFullYear(),
+      String(today.getMonth() + 1).padStart(2, "0"),
+      String(today.getDate()).padStart(2, "0")
+    ].join("-");
+
+    bookingDate.min = localToday;
+
+    // Collect the booking details and open WhatsApp.
+    document.getElementById("bookingForm").addEventListener(
+      "submit",
+      function (event) {
+        event.preventDefault();
+
+        if (!this.reportValidity()) return;
+
+        const customerName =
+          document.getElementById("customerName").value.trim();
+
+        const customerPhone =
+          document.getElementById("customerPhone").value.trim();
+
+        const serviceType =
+          document.getElementById("serviceType").value;
+
+        const date =
+          document.getElementById("bookingDate").value;
+
+        const location =
+          document.getElementById("eventLocation").value.trim();
+
+        const duration =
+          document.getElementById("duration").value;
+
+        const guardCount =
+          document.getElementById("guardCount").value;
+
+        const details =
+          document.getElementById("details").value.trim();
+
+        const message = [
+          "NEW BOOKING ENQUIRY",
+          "Capital's Titan Security",
+          "",
+          "Full Name: " + customerName,
+          "Phone Number: " + customerPhone,
+          "Service Required: " + serviceType,
+          "Date: " + date,
+          "Location: " + location,
+          "Duration: " + duration,
+          "Number of Guards: " + guardCount,
+          "Additional Details: " + (details || "None"),
+          "",
+          "Please contact me about this enquiry."
+        ].join("\n");
+
+        const whatsappURL =
+          "https://api.whatsapp.com/send?phone=2347082719485&text=" +
+          encodeURIComponent(message);
+
+        window.location.href = whatsappURL;
+      }
+    );
   </script>
 
 </body>
 </html>
-  
